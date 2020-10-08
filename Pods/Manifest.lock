@@ -1,0 +1,34 @@
+PODS:
+  - DatePickerDialog (3.0)
+  - GoogleMaps (3.10.0):
+    - GoogleMaps/Maps (= 3.10.0)
+  - GoogleMaps/Base (3.10.0)
+  - GoogleMaps/Maps (3.10.0):
+    - GoogleMaps/Base
+  - Realm (5.4.8):
+    - Realm/Headers (= 5.4.8)
+  - Realm/Headers (5.4.8)
+  - RealmSwift (5.4.8):
+    - Realm (= 5.4.8)
+
+DEPENDENCIES:
+  - DatePickerDialog
+  - GoogleMaps
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - DatePickerDialog
+    - GoogleMaps
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
+  GoogleMaps: 8c080862ff2748ece9929471b30feb56a6c5079d
+  Realm: 042bbb59227a0159eda397b8a5a49fbd67495ce7
+  RealmSwift: 15ddd6b3398ebfc99810811c44f095df1313adb3
+
+PODFILE CHECKSUM: 3b98ec1fdb3148b478b96e3c6c8fcd33c16588e4
+
+COCOAPODS: 1.9.3

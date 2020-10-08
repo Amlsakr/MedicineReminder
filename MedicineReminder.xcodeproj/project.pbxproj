@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2236724D1AE13E4E9BDE8B90 /* Pods_MedicineReminder_MedicineReminderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6589DB937B4F90BB7DF11C /* Pods_MedicineReminder_MedicineReminderUITests.framework */; };
+		59D3D7D26D42F0EC7000E5F0 /* Pods_MedicineReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF82329A60DA5C6C9A71A5B /* Pods_MedicineReminder.framework */; };
+		B3FD0B2AF5CE4A7EF0A64748 /* Pods_MedicineReminderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDE2798B6800B47E6740293 /* Pods_MedicineReminderTests.framework */; };
+		F4468384252F115800351914 /* AddMedicineDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4468383252F115800351914 /* AddMedicineDialog.swift */; };
+		F44A86DE252D01C200C3C46F /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A86DD252D01C200C3C46F /* DatePickerViewController.swift */; };
 		F45335042529DA7800899CCB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45335032529DA7800899CCB /* DetailsViewController.swift */; };
 		F45335062529EB8900899CCB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45335052529EB8900899CCB /* MapViewController.swift */; };
 		F45503E425291B6C00AEE6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45503E325291B6C00AEE6C6 /* AppDelegate.swift */; };
@@ -17,6 +22,8 @@
 		F45503F025291B7D00AEE6C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45503EE25291B7D00AEE6C6 /* LaunchScreen.storyboard */; };
 		F45503FB25291B7F00AEE6C6 /* MedicineReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45503FA25291B7F00AEE6C6 /* MedicineReminderTests.swift */; };
 		F455040625291B7F00AEE6C6 /* MedicineReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F455040525291B7F00AEE6C6 /* MedicineReminderUITests.swift */; };
+		F4CE0E6F252CA9CE00043ABD /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0E6E252CA9CE00043ABD /* Medicine.swift */; };
+		F4CE0E74252CB5C000043ABD /* MedicineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0E73252CB5C000043ABD /* MedicineData.swift */; };
 		F4DBF442252B380400425C3A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DBF440252B380400425C3A /* TableViewCell.swift */; };
 		F4DBF443252B380400425C3A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DBF441252B380400425C3A /* TableViewCell.xib */; };
 		F4DBF448252B385D00425C3A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DBF447252B385D00425C3A /* CollectionViewCell.swift */; };
@@ -41,6 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00296F920DF86320BDD05F7E /* Pods-MedicineReminderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminderTests.release.xcconfig"; path = "Target Support Files/Pods-MedicineReminderTests/Pods-MedicineReminderTests.release.xcconfig"; sourceTree = "<group>"; };
+		0E7A63A2506BBAF4BC38B299 /* Pods-MedicineReminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminderTests.debug.xcconfig"; path = "Target Support Files/Pods-MedicineReminderTests/Pods-MedicineReminderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CF82329A60DA5C6C9A71A5B /* Pods_MedicineReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicineReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6589DB937B4F90BB7DF11C /* Pods_MedicineReminder_MedicineReminderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicineReminder_MedicineReminderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B05E66F22B1C1DDA8341B70 /* Pods-MedicineReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminder.debug.xcconfig"; path = "Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		858C2AEA14DFAAEE6F531B3E /* Pods-MedicineReminder-MedicineReminderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminder-MedicineReminderUITests.debug.xcconfig"; path = "Target Support Files/Pods-MedicineReminder-MedicineReminderUITests/Pods-MedicineReminder-MedicineReminderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA71B633A186AD03719937C9 /* Pods-MedicineReminder-MedicineReminderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminder-MedicineReminderUITests.release.xcconfig"; path = "Target Support Files/Pods-MedicineReminder-MedicineReminderUITests/Pods-MedicineReminder-MedicineReminderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CEDE2798B6800B47E6740293 /* Pods_MedicineReminderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicineReminderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C769C632992711F71527FB /* Pods-MedicineReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminder.release.xcconfig"; path = "Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder.release.xcconfig"; sourceTree = "<group>"; };
+		F4468383252F115800351914 /* AddMedicineDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineDialog.swift; sourceTree = "<group>"; };
+		F44A86DD252D01C200C3C46F /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		F45335032529DA7800899CCB /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		F45335052529EB8900899CCB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F45503E025291B6C00AEE6C6 /* MedicineReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicineReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,10 +75,11 @@
 		F455040125291B7F00AEE6C6 /* MedicineReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicineReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F455040525291B7F00AEE6C6 /* MedicineReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineReminderUITests.swift; sourceTree = "<group>"; };
 		F455040725291B7F00AEE6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CE0E6E252CA9CE00043ABD /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		F4CE0E73252CB5C000043ABD /* MedicineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineData.swift; sourceTree = "<group>"; };
 		F4DBF440252B380400425C3A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F4DBF441252B380400425C3A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F4DBF447252B385D00425C3A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		F4DBF454252B41FB00425C3A /* blowarrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blowarrow.jpg; sourceTree = "<group>"; };
 		F4DBF458252B5AB500425C3A /* notification.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = notification.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D3D7D26D42F0EC7000E5F0 /* Pods_MedicineReminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FD0B2AF5CE4A7EF0A64748 /* Pods_MedicineReminderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2236724D1AE13E4E9BDE8B90 /* Pods_MedicineReminder_MedicineReminderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87EA036DF5BE047062E7BAE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CF82329A60DA5C6C9A71A5B /* Pods_MedicineReminder.framework */,
+				4F6589DB937B4F90BB7DF11C /* Pods_MedicineReminder_MedicineReminderUITests.framework */,
+				CEDE2798B6800B47E6740293 /* Pods_MedicineReminderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F45503D725291B6C00AEE6C6 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +128,8 @@
 				F45503F925291B7F00AEE6C6 /* MedicineReminderTests */,
 				F455040425291B7F00AEE6C6 /* MedicineReminderUITests */,
 				F45503E125291B6C00AEE6C6 /* Products */,
+				F9FD8EC896C9079225FF663A /* Pods */,
+				87EA036DF5BE047062E7BAE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				F4DBF458252B5AB500425C3A /* notification.jpg */,
-				F4DBF454252B41FB00425C3A /* blowarrow.jpg */,
 				F45503E325291B6C00AEE6C6 /* AppDelegate.swift */,
 				F45503E525291B6C00AEE6C6 /* SceneDelegate.swift */,
 				F45503E725291B6C00AEE6C6 /* ViewController.swift */,
@@ -126,6 +159,10 @@
 				F4DBF440252B380400425C3A /* TableViewCell.swift */,
 				F4DBF441252B380400425C3A /* TableViewCell.xib */,
 				F4DBF447252B385D00425C3A /* CollectionViewCell.swift */,
+				F4CE0E6E252CA9CE00043ABD /* Medicine.swift */,
+				F4CE0E73252CB5C000043ABD /* MedicineData.swift */,
+				F44A86DD252D01C200C3C46F /* DatePickerViewController.swift */,
+				F4468383252F115800351914 /* AddMedicineDialog.swift */,
 			);
 			path = MedicineReminder;
 			sourceTree = "<group>";
@@ -148,6 +185,19 @@
 			path = MedicineReminderUITests;
 			sourceTree = "<group>";
 		};
+		F9FD8EC896C9079225FF663A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B05E66F22B1C1DDA8341B70 /* Pods-MedicineReminder.debug.xcconfig */,
+				E1C769C632992711F71527FB /* Pods-MedicineReminder.release.xcconfig */,
+				858C2AEA14DFAAEE6F531B3E /* Pods-MedicineReminder-MedicineReminderUITests.debug.xcconfig */,
+				BA71B633A186AD03719937C9 /* Pods-MedicineReminder-MedicineReminderUITests.release.xcconfig */,
+				0E7A63A2506BBAF4BC38B299 /* Pods-MedicineReminderTests.debug.xcconfig */,
+				00296F920DF86320BDD05F7E /* Pods-MedicineReminderTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F455040A25291B7F00AEE6C6 /* Build configuration list for PBXNativeTarget "MedicineReminder" */;
 			buildPhases = (
+				3CB2CC3F833EF6407DBEF2E1 /* [CP] Check Pods Manifest.lock */,
 				F45503DC25291B6C00AEE6C6 /* Sources */,
 				F45503DD25291B6C00AEE6C6 /* Frameworks */,
 				F45503DE25291B6C00AEE6C6 /* Resources */,
+				8E6E477E5A816E74271BE299 /* [CP] Embed Pods Frameworks */,
+				577CDA60CE189E43EB286680 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F455040D25291B7F00AEE6C6 /* Build configuration list for PBXNativeTarget "MedicineReminderTests" */;
 			buildPhases = (
+				559DA918CBB5F91A7C51A8CE /* [CP] Check Pods Manifest.lock */,
 				F45503F225291B7F00AEE6C6 /* Sources */,
 				F45503F325291B7F00AEE6C6 /* Frameworks */,
 				F45503F425291B7F00AEE6C6 /* Resources */,
@@ -190,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F455041025291B7F00AEE6C6 /* Build configuration list for PBXNativeTarget "MedicineReminderUITests" */;
 			buildPhases = (
+				ECF1795C3E33D6B3AB8EDF2F /* [CP] Check Pods Manifest.lock */,
 				F45503FD25291B7F00AEE6C6 /* Sources */,
 				F45503FE25291B7F00AEE6C6 /* Frameworks */,
 				F45503FF25291B7F00AEE6C6 /* Resources */,
+				4A13B98D33D25ABF66006FA0 /* [CP] Embed Pods Frameworks */,
+				9F0910886ED6115A095EB465 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +333,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CB2CC3F833EF6407DBEF2E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicineReminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A13B98D33D25ABF66006FA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder-MedicineReminderUITests/Pods-MedicineReminder-MedicineReminderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder-MedicineReminderUITests/Pods-MedicineReminder-MedicineReminderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder-MedicineReminderUITests/Pods-MedicineReminder-MedicineReminderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		559DA918CBB5F91A7C51A8CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicineReminderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		577CDA60CE189E43EB286680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E6E477E5A816E74271BE299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F0910886ED6115A095EB465 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder-MedicineReminderUITests/Pods-MedicineReminder-MedicineReminderUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder-MedicineReminderUITests/Pods-MedicineReminder-MedicineReminderUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedicineReminder-MedicineReminderUITests/Pods-MedicineReminder-MedicineReminderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF1795C3E33D6B3AB8EDF2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MedicineReminder-MedicineReminderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F45503DC25291B6C00AEE6C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -283,11 +477,15 @@
 			files = (
 				F45503E825291B6C00AEE6C6 /* ViewController.swift in Sources */,
 				F45503E425291B6C00AEE6C6 /* AppDelegate.swift in Sources */,
+				F4468384252F115800351914 /* AddMedicineDialog.swift in Sources */,
 				F45503E625291B6C00AEE6C6 /* SceneDelegate.swift in Sources */,
 				F4DBF448252B385D00425C3A /* CollectionViewCell.swift in Sources */,
 				F4DBF442252B380400425C3A /* TableViewCell.swift in Sources */,
 				F45335062529EB8900899CCB /* MapViewController.swift in Sources */,
+				F44A86DE252D01C200C3C46F /* DatePickerViewController.swift in Sources */,
 				F45335042529DA7800899CCB /* DetailsViewController.swift in Sources */,
+				F4CE0E6F252CA9CE00043ABD /* Medicine.swift in Sources */,
+				F4CE0E74252CB5C000043ABD /* MedicineData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +656,7 @@
 		};
 		F455040B25291B7F00AEE6C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B05E66F22B1C1DDA8341B70 /* Pods-MedicineReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +674,7 @@
 		};
 		F455040C25291B7F00AEE6C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C769C632992711F71527FB /* Pods-MedicineReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +692,7 @@
 		};
 		F455040E25291B7F00AEE6C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7A63A2506BBAF4BC38B299 /* Pods-MedicineReminderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +714,7 @@
 		};
 		F455040F25291B7F00AEE6C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00296F920DF86320BDD05F7E /* Pods-MedicineReminderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +736,7 @@
 		};
 		F455041125291B7F00AEE6C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858C2AEA14DFAAEE6F531B3E /* Pods-MedicineReminder-MedicineReminderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +756,7 @@
 		};
 		F455041225291B7F00AEE6C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA71B633A186AD03719937C9 /* Pods-MedicineReminder-MedicineReminderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
