@@ -24,10 +24,24 @@ class DatePickerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         dialogBoxView.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        dialogBoxView.layer.cornerRadius = 6.0
+        dialogBoxView.layer.borderWidth = 1.2
+        dialogBoxView.layer.borderColor = UIColor(named: "dialogBoxGray")?.cgColor
+        
+        
         
     }
     
-
+    static func showPopUp(parentVC : UIViewController){
+        if let popUpViewController = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(identifier: "DatePickerViewController") as?
+            DatePickerViewController {
+            popUpViewController.modalPresentationStyle = .custom
+            popUpViewController.modalTransitionStyle = .crossDissolve
+            parentVC.present(popUpViewController, animated: true, completion: nil)
+            
+        }
+    }
     /*
     // MARK: - Navigation
 

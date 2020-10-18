@@ -14,6 +14,7 @@
 		F44A86DE252D01C200C3C46F /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A86DD252D01C200C3C46F /* DatePickerViewController.swift */; };
 		F45335042529DA7800899CCB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45335032529DA7800899CCB /* DetailsViewController.swift */; };
 		F45335062529EB8900899CCB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45335052529EB8900899CCB /* MapViewController.swift */; };
+		F453C2D0253348860030B721 /* notif.png in Resources */ = {isa = PBXBuildFile; fileRef = F453C2CF253348860030B721 /* notif.png */; };
 		F45503E425291B6C00AEE6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45503E325291B6C00AEE6C6 /* AppDelegate.swift */; };
 		F45503E625291B6C00AEE6C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45503E525291B6C00AEE6C6 /* SceneDelegate.swift */; };
 		F45503E825291B6C00AEE6C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45503E725291B6C00AEE6C6 /* ViewController.swift */; };
@@ -22,12 +23,12 @@
 		F45503F025291B7D00AEE6C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45503EE25291B7D00AEE6C6 /* LaunchScreen.storyboard */; };
 		F45503FB25291B7F00AEE6C6 /* MedicineReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45503FA25291B7F00AEE6C6 /* MedicineReminderTests.swift */; };
 		F455040625291B7F00AEE6C6 /* MedicineReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F455040525291B7F00AEE6C6 /* MedicineReminderUITests.swift */; };
+		F465F913253864DE00DF2DFC /* DayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F465F912253864DE00DF2DFC /* DayData.swift */; };
 		F4CE0E6F252CA9CE00043ABD /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0E6E252CA9CE00043ABD /* Medicine.swift */; };
 		F4CE0E74252CB5C000043ABD /* MedicineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE0E73252CB5C000043ABD /* MedicineData.swift */; };
 		F4DBF442252B380400425C3A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DBF440252B380400425C3A /* TableViewCell.swift */; };
 		F4DBF443252B380400425C3A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DBF441252B380400425C3A /* TableViewCell.xib */; };
 		F4DBF448252B385D00425C3A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DBF447252B385D00425C3A /* CollectionViewCell.swift */; };
-		F4DBF459252B5AB600425C3A /* notification.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4DBF458252B5AB500425C3A /* notification.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F44A86DD252D01C200C3C46F /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		F45335032529DA7800899CCB /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		F45335052529EB8900899CCB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F453C2CF253348860030B721 /* notif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notif.png; sourceTree = "<group>"; };
 		F45503E025291B6C00AEE6C6 /* MedicineReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicineReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45503E325291B6C00AEE6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F45503E525291B6C00AEE6C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,12 +77,12 @@
 		F455040125291B7F00AEE6C6 /* MedicineReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicineReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F455040525291B7F00AEE6C6 /* MedicineReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineReminderUITests.swift; sourceTree = "<group>"; };
 		F455040725291B7F00AEE6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F465F912253864DE00DF2DFC /* DayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayData.swift; sourceTree = "<group>"; };
 		F4CE0E6E252CA9CE00043ABD /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		F4CE0E73252CB5C000043ABD /* MedicineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineData.swift; sourceTree = "<group>"; };
 		F4DBF440252B380400425C3A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F4DBF441252B380400425C3A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F4DBF447252B385D00425C3A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		F4DBF458252B5AB500425C3A /* notification.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = notification.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +148,7 @@
 		F45503E225291B6C00AEE6C6 /* MedicineReminder */ = {
 			isa = PBXGroup;
 			children = (
-				F4DBF458252B5AB500425C3A /* notification.jpg */,
+				F453C2CF253348860030B721 /* notif.png */,
 				F45503E325291B6C00AEE6C6 /* AppDelegate.swift */,
 				F45503E525291B6C00AEE6C6 /* SceneDelegate.swift */,
 				F45503E725291B6C00AEE6C6 /* ViewController.swift */,
@@ -163,6 +165,7 @@
 				F4CE0E73252CB5C000043ABD /* MedicineData.swift */,
 				F44A86DD252D01C200C3C46F /* DatePickerViewController.swift */,
 				F4468383252F115800351914 /* AddMedicineDialog.swift */,
+				F465F912253864DE00DF2DFC /* DayData.swift */,
 			);
 			path = MedicineReminder;
 			sourceTree = "<group>";
@@ -309,8 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DBF459252B5AB600425C3A /* notification.jpg in Resources */,
 				F45503F025291B7D00AEE6C6 /* LaunchScreen.storyboard in Resources */,
+				F453C2D0253348860030B721 /* notif.png in Resources */,
 				F4DBF443252B380400425C3A /* TableViewCell.xib in Resources */,
 				F45503ED25291B7D00AEE6C6 /* Assets.xcassets in Resources */,
 				F45503EB25291B6D00AEE6C6 /* Main.storyboard in Resources */,
@@ -475,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F465F913253864DE00DF2DFC /* DayData.swift in Sources */,
 				F45503E825291B6C00AEE6C6 /* ViewController.swift in Sources */,
 				F45503E425291B6C00AEE6C6 /* AppDelegate.swift in Sources */,
 				F4468384252F115800351914 /* AddMedicineDialog.swift in Sources */,
