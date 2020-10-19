@@ -28,14 +28,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-  //
+        self.showAddingPopUp.layer.masksToBounds = true
+        self.showAddingPopUp.layer.cornerRadius = 10.0
+        
+        self.blueView.layer.cornerRadius = 15
+        self.blueView.layer.masksToBounds = true
+        
         self.horizontalCollectionView.dataSource = self
         self.horizontalCollectionView.delegate = self
 //
-//        self.tableView.delegate = self
-//        self.tableView.dataSource = self
-        // Do any additional setup after loading the view.
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.rowHeight = 100
         
+        self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "tableViewCell")
 
         self.datePicker.addTarget(self, action: #selector(reloadHorizontalData), for: .valueChanged)
         
@@ -128,8 +134,15 @@ class ViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(true)
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        //navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    @IBAction func addMedicine(_ sender: Any) {
+        self.performSegue(withIdentifier: "addMedicine", sender:self)
+    }
+    
+    
+    
 }
 
 extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource{
@@ -163,19 +176,37 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
     
 
 }
-//
-//
-//extension ViewController : UITableViewDelegate , UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//    }
-//
-//
-//}
+
+
+extension ViewController : UITableViewDelegate , UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        var realm = MedicineData()
+        var size = realm.readMedicineList()
+        print("size , \(size)")
+        return size.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! TableViewCell
+        cell.medicineName.text = "panadol"
+        
+        return cell
+    }
+
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "goToDetails", sender: nil)
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 12.0
+    }
+
+}
 
 extension Date {
     var startOfDay: Date {
@@ -219,6 +250,5 @@ extension Date {
           let day = formatter.string(from: date)
         return day
     }
-    
-    
+        
 }

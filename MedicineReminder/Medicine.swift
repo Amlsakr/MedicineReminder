@@ -12,12 +12,30 @@ class Medicine : Object {
     @objc dynamic var medicineName = ""
     @objc dynamic var medicineDescription = ""
     @objc dynamic var numberOfTimePerDay = 0
-    @objc dynamic var numberOfTimePerMonth = 0
+    @objc dynamic var numberOfTimePerOnce = 0
     @objc dynamic var allowNotification = false
     @objc dynamic var medicineQuantity  = 0
     @objc dynamic var medicineStartTime = ""
     
+     init(medicineName:String ,medicineDescription:String , medicineQuantity :Int ,
+         numberOfTimePerDay:Int , numberOfTimePerOnce : Int , allowNotification:Bool , medicineStartTime:String ){
+        
+        self.medicineName = medicineName
+        self.medicineDescription = medicineDescription
+        self.medicineQuantity = medicineQuantity
+        self.numberOfTimePerDay = numberOfTimePerDay
+        self.numberOfTimePerOnce = numberOfTimePerOnce
+        self.allowNotification = allowNotification
+        self.medicineStartTime = medicineStartTime
+        
+    }
     
+    override required init() {
+        
+      //  fatalError("init() has not been implemented")
+    }
+    
+
     
     
 }

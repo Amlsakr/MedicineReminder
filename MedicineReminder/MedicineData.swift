@@ -11,7 +11,17 @@ import RealmSwift
 class MedicineData {
     var realm = try! Realm()
     
-    func addMedicine(){
+    func addMedicine(medicine : Medicine){
+        try! realm.write {
+            realm.add(medicine)
+        }
+    }
+    
+    func readMedicineList() -> [Medicine] {
+        let listMed = realm.objects(Medicine.self)
         
+        var medicine = [Medicine]()
+        medicine = Array(listMed)
+        return medicine
     }
 }
