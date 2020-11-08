@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import DatePickerDialog
+
 
 class ViewController: UIViewController {
 
@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var  d =  Date()
+    var medicines:[Medicine] = []
+    var realm:MedicineData?
+    var selectedIndexPath: IndexPath = IndexPath()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,7 +48,8 @@ class ViewController: UIViewController {
 
         self.datePicker.addTarget(self, action: #selector(reloadHorizontalData), for: .valueChanged)
         
-        
+        realm = MedicineData()
+        medicines = (realm?.readMedicineList())!
         if #available(iOS 13, *)
            {
                let statusBar = UIView(frame: (UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame)!)
@@ -163,6 +167,7 @@ extension ViewController : UICollectionViewDelegate , UICollectionViewDataSource
 
         
         let cell = horizontalCollectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCell
+        
         var data = getHorizontalData()
         var dayName = data[indexPath.row].dayName
         cell.dayNameLabel.text = String(dayName.prefix(3))
@@ -184,28 +189,70 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        var realm = MedicineData()
-        var size = realm.readMedicineList()
-        print("size , \(size)")
-        return size.count
+       
+        return medicines.count
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        footerView.backgroundColor = .white
+        return footerView
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! TableViewCell
-        cell.medicineName.text = "panadol"
+
+        cell.layer.masksToBounds = true
+        cell.layer.cornerRadius = 10
         
+        cell.medicineName.text = medicines[indexPath.row].medicineName + ",  " + String(medicines[indexPath.row].medicineQuantity)
+        cell.medicineAmount.text =  String(medicines[indexPath.row].numberOfTimePerDay) + ",  " + String(medicines[indexPath.row].numberOfTimePerOnce)
+        cell.medicineTime.text = medicines[indexPath.row].medicineStartTime
+        if (medicines[indexPath.row].allowNotification){
+            
+        }else{
+            
+        }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete){
+            print("Delete")
+        }
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 
+        cell.backgroundColor = UIColor(red: 245/255, green: 250/255, blue: 240/255, alpha: 1)
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "goToDetails", sender: nil)
+       
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 12.0
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedIndexPath = indexPath
+        self.performSegue(withIdentifier: "goToDetails", sender: self)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let selectedRow = self.selectedIndexPath.row
+        let destination = segue.destination as? DetailsViewController
+        destination?.medicineNameTxt = medicines[selectedRow].medicineName
+        destination?.medicineDescriptionTxt = medicines[selectedRow].medicineDescription
+        destination?.medicineStartTime =  medicines[selectedRow].medicineStartTime
+        destination?.medicineAmountTxt =  medicines[selectedRow].medicineQuantity
+        
+        
+    }
 }
 
 extension Date {

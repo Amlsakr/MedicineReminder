@@ -16,10 +16,15 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var medicineAmount: UILabel!
     @IBOutlet weak var medicineName: UILabel!
     
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var medicineNotificatiion: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.backgroundColor = .clear
+        self.contentView.layer.cornerRadius = 20
+        self.contentView.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

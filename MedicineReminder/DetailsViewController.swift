@@ -20,6 +20,14 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var medicineTime: UILabel!
     @IBOutlet weak var medicineDescription: UILabel!
     @IBOutlet weak var buyButton: UIButton!
+    var allowNotification:Bool?
+    var medicineNameTxt:String?
+    var medicineDescriptionTxt:String?
+    var medicineStartTime:String?
+    var medicineAmountTxt:Int?
+    var medicineAmountPerDay:Int?
+    var medicineAmountPerOnce:Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
